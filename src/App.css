@@ -30,12 +30,11 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .post_action .btn {
   width: 90%;
-}
-.post_action .btn:first-child {
-  margin-right: 0.5rem;
 }
 .post span {
   margin-right: 2px;
