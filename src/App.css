@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nav-extended {
+  display: flex;
+  justify-content: center;
+}
+.post {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 100%;
+}
+.post_content {
+  flex-grow: 3;
+}
+.post_action {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.post_action .btn {
+  width: 90%;
+}
+.post_action .btn:first-child {
+  margin-right: 0.5rem;
+}
+.post span {
+  margin-right: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.modalWin {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modalWin.modalActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContent {
+  padding: 10px;
+  min-width: 100px;
+  border-radius: 10px;
+  background: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagesWrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pagesWrapper .btn {
+  width: 18%;
+  margin-bottom: 5px;
 }
